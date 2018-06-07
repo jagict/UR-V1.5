@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UR 点动控制器">
+</Property><Property Name="解决方案文件" Value="E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\UR 点动控制器.sln">
+</Property><Property Name="Date" Value="2014年4月9日">
+</Property><Property Name="Time" Value="14:20:32">
+</Property></Properties><Event ErrorLevel="0" Project="UR 点动控制器" Source="UR 点动控制器.csproj" Description="项目文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\UR 点动控制器.csproj">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="UR 点动控制器.csproj.user" Description="项目用户文件成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\UR 点动控制器.csproj.user">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="AboutMe.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\AboutMe.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="AboutMe.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\AboutMe.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Config.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Config.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Config.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Config.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Dashboard.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Dashboard.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Dashboard.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Dashboard.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Feedback.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Feedback.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Feedback.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Feedback.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="FilesINI.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\FilesINI.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Form1.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Form1.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="IPChange.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\IPChange.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="IPChange.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\IPChange.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="ModbusSocket.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\ModbusSocket.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="NetConnection.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\NetConnection.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="PoseDifference.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\PoseDifference.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="PoseDifference.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\PoseDifference.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Program.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Properties\Resources.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Properties\Settings.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Register.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Register.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Register.Designer.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Register.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="URControlHandle.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\URControlHandle.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="URDateHandle.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\URDateHandle.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="XpProgressBar.cs" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\XpProgressBar.cs">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Properties\Settings.settings" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="bin\Debug\Button\BtnPowerOff.png" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\bin\Debug\Button\BtnPowerOff.png">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="AboutMe.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\AboutMe.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Config.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Config.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Dashboard.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Dashboard.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Feedback.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Feedback.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Form1.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="IPChange.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\IPChange.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="PoseDifference.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\PoseDifference.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Properties\Resources.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="Register.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\Register.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="XpProgressBar.resx" Description="文件已成功备份为 E:\当前工作\程序 图像处理 算法\直线轨迹拟合算法\UR 点动控制器 V1.1\Backup\XpProgressBar.resx">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="UR 点动控制器.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="UR 点动控制器" Source="UR 点动控制器.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UR 点动控制器" Source="UR 点动控制器.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>
