@@ -63,7 +63,7 @@ namespace UR_点动控制器
             string AutoConnection = ConfigController.INIRead("UR控制参数", "IfAutoConnect", DefaultINIPath);
 
 
-            robotComm.StartClient();
+            //robotComm.StartClient();
 
             //如果启用了自动连接，则直接获取所有自动连接参数，并运行连接方法
             if (AutoConnection == "YES")
@@ -975,23 +975,24 @@ namespace UR_点动控制器
 
         private void GoPoint_Click(object sender, EventArgs e)
         {            
-            double x = 0.15;
-            double y = 0.172;
-            double z = 0.586;//第一层起始位置
+            double x = -0.124;
+            double y = 0.184;
+            double z = 0.644;//第一层起始位置
+
             
-            s_str = "movel(p[0.15,0.172,0.555,0.005,-0.018,4.215],a=0.1,v=0.1)";//home
+            s_str = "movel(p[-0.124,0.184,0.624,0,0,0],a=0.1,v=0.1,t=2)";//home
             URController.Send_command(s_str);
             Thread.Sleep(2000);
 
             #region 连续打印
 
-            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0.005,-0.018,4.215],a=0.1,v=0.05,t=3)";//打印起始位置
+            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.05,t=3)";//打印起始位置
             URController.Send_command(s_str);
             Thread.Sleep(3000);
 
             for (int k = 1; k < 6; k = k + 1)//k决定层数
-            {            
-                movesquare_cons(x, y, z);//正方形路径控制
+            {
+                movesquare_newpath(x, y, z);//正方形路径控制
                 z = z - (double)1.6 / 1000;//每两层高度差
             }
             #endregion
@@ -1578,12 +1579,12 @@ namespace UR_点动控制器
 
             for (int i = 1; i < 9; i++)//中间路径填充
             {
-                if (i % 2 == 0)//判断+x还是-x
+                if (i % 2 != 0)//判断+x还是-x
                 {
                     y = y + 0.001; x = x + 0.001;
-                    s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
+                    s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.8)";
                     URController.Send_command(s_str);
-                    Thread.Sleep(600);
+                    Thread.Sleep(800);
 
                     x = x + 0.009;
                     s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=5.4)";
@@ -1593,9 +1594,9 @@ namespace UR_点动控制器
                 else
                 {
                     y = y + 0.001; x = x - 0.001;
-                    s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
+                    s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.8)";
                     URController.Send_command(s_str);
-                    Thread.Sleep(600);
+                    Thread.Sleep(800);
 
                     x = x - 0.009;
                     s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=5.4)";
@@ -1605,9 +1606,9 @@ namespace UR_点动控制器
             }
 
             y = y + 0.001; x = x + 0.001;
-            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
+            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.8)";
             URController.Send_command(s_str);
-            Thread.Sleep(600);
+            Thread.Sleep(800);
 
             x = x + 0.008;
             s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=4.8)";
@@ -1615,9 +1616,9 @@ namespace UR_点动控制器
             Thread.Sleep(4800);
 
             y = y + 0.001; x = x + 0.001;//走到对角点
-            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
+            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.8)";
             URController.Send_command(s_str);
-            Thread.Sleep(600);
+            Thread.Sleep(800);
 
             z = z - 0.0008;//往上一层
             s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
@@ -1646,12 +1647,12 @@ namespace UR_点动控制器
 
             for (int i = 1; i < 9; i++)
             {
-                if (i % 2 == 0)//判断+x还是-x
+                if (i % 2 != 0)//判断+x还是-x
                 {
                     x = x - 0.001; y = y - 0.001;
-                    s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
+                    s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.8)";
                     URController.Send_command(s_str);
-                    Thread.Sleep(600);
+                    Thread.Sleep(800);
 
                     y = y - 0.009;
                     s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=5.4)";
@@ -1661,11 +1662,11 @@ namespace UR_点动控制器
                 else
                 {
                     x = x - 0.001; y = y + 0.001;
-                    s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
+                    s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.8)";
                     URController.Send_command(s_str);
-                    Thread.Sleep(600);
+                    Thread.Sleep(800);
 
-                    y = y - 0.009;
+                    y = y + 0.009;
                     s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=5.4)";
                     URController.Send_command(s_str);
                     Thread.Sleep(5400);
@@ -1673,9 +1674,9 @@ namespace UR_点动控制器
             }
 
             x = x - 0.001; y = y - 0.001;
-            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
+            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.8)";
             URController.Send_command(s_str);
-            Thread.Sleep(600);
+            Thread.Sleep(800);
 
             y = y - 0.008;
             s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=4.8)";
@@ -1683,9 +1684,9 @@ namespace UR_点动控制器
             Thread.Sleep(4800);
 
             x = x - 0.001; y = y - 0.001;
-            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.6)";
+            s_str = "movel(p[" + x.ToString() + "," + y.ToString() + "," + z.ToString() + ",0,0,0],a=0.1,v=0.01,t=0.8)";
             URController.Send_command(s_str);
-            Thread.Sleep(600);//回到起始点
+            Thread.Sleep(800);//回到起始点
 
         }
 
